@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/issueTracker.css">
+
+<main class="mainProject">
+    <a href="/issueTracker/createProject" id="addProject">
+        <span>
+            <i class="fa fa-folder" aria-hidden="true"></i><b>Create New Project</b>
+        </span>
+    </a>
+
+    <%if(!addedProject){%>  <%# this is the common id of every project %>
+        <div id="noProject">
+            <span>
+                <i class="fa-solid fa-file-excel fa-lg"></i> No Project Here
+            </span>
+        </div>
+        <%}else{%>
+            <% for(let project of addedProject) { %>
+                <div  class="project">
+                    <h1>
+                        <%= project.projectName%>
+                    </h1>
+                    <p><%= project.authorName %>
+                    </p>
+                </div>
+                <% } %>
+                    <% } %>
+</main>

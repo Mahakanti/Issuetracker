@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/createProject.css">
+
+<section class="createProjectSection">
+    <form class="createProjectForm" action="/issueTracker/addProject" method="post">
+
+       
+           
+          
+           
+
+        <div >
+            <b style="color: blueviolet;" >Project Name</b>
+            <input type="text" name="projectName" class="form-control" placeholder="Project Name" required>
+        </div>
+        <div >
+            <b style="color: blueviolet;">Description</b>
+            <textarea name="description" class="form-control"  rows="3" placeholder="project Description" required></textarea>
+        </div>
+        <div >
+            <b style="color: blueviolet;">Author Name</b>
+            <input type="text" name="authorName" class="form-control" placeholder="Author Name">
+        </div>
+        <button type="submit" class="btn btn-primary my-2">Submit Project</button>
+    </form>
+</section>

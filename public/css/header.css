@@ -1,0 +1,13 @@
+.navHeader {
+    width: 100vw;
+    margin: 0;
+    background-color: 	#60473dd6;
+    padding: 20px 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
